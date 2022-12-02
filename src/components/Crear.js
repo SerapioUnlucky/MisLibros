@@ -12,7 +12,7 @@ const Crear = ({setListadoState}) => {
 
     const conseguirDatos = (e) => {
 
-        e.preventDefault();
+        //e.preventDefault();
 
         // Conseguir datos del formulario
         let target = e.target;
@@ -50,8 +50,10 @@ const Crear = ({setListadoState}) => {
             </strong>
 
             <form onSubmit={ conseguirDatos }>
-                <input type="text" id="titulo" placeholder="Titulo" />
-                <textarea id="descripcion" name="descripcion" placeholder="Descripción"></textarea>
+                <input type="text" id="titulo" placeholder="Ingrese título del libro" required/>
+
+                <textarea id="descripcion" name="descripcion" placeholder="Ingrese descripción del libro" required/>
+
                 <input type="submit" id="save" value="Guardar" />
             </form>
 

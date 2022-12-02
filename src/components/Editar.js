@@ -37,9 +37,9 @@ const Editar = ({libro, conseguirLibros, setEditar, setListadoState}) => {
             <h3 className="title">Editar libro</h3>
             <form onSubmit={e => guardarEdicion(e, libro.id)}>
 
-                <input type="text" name="titulo" className="titulo_editado" placeholder={libro.titulo} />
+                <input type="text" name="titulo" className="titulo_editado" placeholder="Ingrese título del libro" defaultValue={libro.titulo} required/>
 
-                <textarea name="descripcion" placeholder={libro.descripcion} className="descripcion_editada" />
+                <textarea name="descripcion" defaultValue={libro.descripcion} placeholder="Ingrese descripción del libro" className="descripcion_editada" required/>
 
                 <input type="submit" className="editar" value="Actualizar" />
 

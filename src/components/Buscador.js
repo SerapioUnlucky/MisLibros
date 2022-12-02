@@ -36,7 +36,7 @@ const Buscador = ({listadoState, setListadoState}) => {
             )}
 
             <form>
-                <input type="text" id="search_field" name="busqueda" autoComplete="off" onChange={ buscarLibro } />
+                <input type="text" placeholder="Escriba aquí para buscar un libro" id="search_field" name="busqueda" autoComplete="off" onChange={ buscarLibro } />
             </form>
         </div>
   )
